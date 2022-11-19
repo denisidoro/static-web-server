@@ -67,6 +67,6 @@ jobs:
       uses: svenstaro/upload-release-action@v1-release
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: target/tar/staticwebserver.${{ steps.build.outputs.EXTENSION }}
+        file: target/tar/static-web-server.${{ steps.build.outputs.EXTENSION }}
         tag: ${{ github.ref }}
-        asset_name: staticwebserver-${{ steps.get_version.outputs.VERSION }}-${{ matrix.target }}.${{ steps.build.outputs.EXTENSION }}
+        asset_name: static-web-server-${{ steps.get_version.outputs.VERSION }}-${{ matrix.target }}.${{ steps.build.outputs.EXTENSION }}

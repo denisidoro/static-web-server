@@ -3,7 +3,7 @@ set -euo pipefail
 
 export STATICWEBSERVER_HOME="$(cd "$(dirname "$0")/.." && pwd)"
 export PROJ_HOME="$STATICWEBSERVER_HOME"
-export PROJ_NAME="staticwebserver"
+export PROJ_NAME="static-web-server"
 export CARGO_PATH="${STATICWEBSERVER_HOME}/core/Cargo.toml"
 
 # TODO: bump dotfiles + remove this fn
